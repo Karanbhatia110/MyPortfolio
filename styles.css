@@ -408,6 +408,7 @@ body {
 
     .section-title {
         font-size: 2rem;
+        margin-left: 90px;
     }
 
     .project, .project2 {
@@ -415,14 +416,23 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 20px; /* Add some margin for spacing */
+        margin: 30px; /* Add some margin for spacing */
     }
 
-    .project-image, .project2-image {
+    .project-image {
         order: 1;
         width: 80%; /* Adjust the width as needed for mobile */
         max-width: 300px; /* Ensure the image is not too large */
         margin-bottom: 15px; /* Space between image and text */
+        display: block; /* Ensure the image is displayed as a block element */
+    }
+
+    .project2-image {
+        order: 1;
+        width: 80%; /* Adjust the width as needed for mobile */
+        max-width: 300px; /* Ensure the image is not too large */
+        margin-bottom: 15px; /* Space between image and text */
+        margin-left: 90px;
         display: block; /* Ensure the image is displayed as a block element */
     }
 
@@ -434,9 +444,17 @@ body {
         margin-right: auto; /* Center the image horizontally */
     }
 
-    .project-details, .project2-details {
+    .project-details {
         order: 2;
         max-width: 100%;
+        padding: 15px;
+        text-align: center; /* Ensure text is centered */
+    }
+    .project2-details {
+        order: 2;
+        max-width: 100%;
+        margin-top: 25px;
+        margin-left: -15px;
         padding: 15px;
         text-align: center; /* Ensure text is centered */
     }
@@ -446,9 +464,18 @@ body {
         margin-bottom: 15px; /* Space between description and button */
     }
 
-    .project-details .btn, .project2-details .btn {
+    .project-details .btn {
         font-size: 0.9rem;
         margin-top: 10px; /* Adjust margin if needed */
+        display: block; /* Ensure button aligns properly */
+        margin-left: auto;
+        margin-right: auto; /* Center button horizontally */
+    }
+
+    .project2-details .btn {
+        font-size: 0.9rem;
+        margin-top: 10px; /* Adjust margin if needed */
+        margin-left: 300px;
         display: block; /* Ensure button aligns properly */
         margin-left: auto;
         margin-right: auto; /* Center button horizontally */
