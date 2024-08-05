@@ -387,7 +387,8 @@ body {
 
     .animation > div > div {
         height: 4rem; /* Adjusted height for mobile */
-        font-size: 1.2rem; /* Adjusted font size for mobile */
+        width: 1000px;
+        font-size: 2rem; /* Adjusted font size for mobile */
     }
 
     .heading {
@@ -480,6 +481,13 @@ body {
         margin-left: auto;
         margin-right: auto; /* Center button horizontally */
     }
+    @keyframes text-animation {
+        0%, 20% { margin-top: 0; }
+        30%, 50% { margin-top: -4rem; }
+        60%, 80% { margin-top: -8rem; }
+        90%, 100% { margin-top: 0; }
+    }
+
 }
 /* Tablet Styles */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -551,7 +559,7 @@ body {
 @keyframes text-animation-tablet {
     0%, 20% { margin-top: 0; }
     30%, 50% { margin-top: -6rem; }
-    60%, 80% { margin-top: -12  rem; }
+    60%, 80% { margin-top: -12rem; }
     90%, 100% { margin-top: 0; }
 }
 
