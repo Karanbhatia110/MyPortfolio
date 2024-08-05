@@ -410,7 +410,7 @@ body {
 
     .icons a {
         margin-right: -5px; /* Space between icons */
-        margin-top: 17px;
+        margin-top: 6px;
     }
 
     .icons a img {
@@ -447,6 +447,7 @@ body {
     .navbar a {
         margin-right: 10px;
         font-size: 14px;
+        margin-top: -15px;
     }
     
 
